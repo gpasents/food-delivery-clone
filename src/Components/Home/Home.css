@@ -1,0 +1,10 @@
+#home__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home__banner h1{
+    text-align: center;
+}

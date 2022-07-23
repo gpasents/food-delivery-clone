@@ -1,0 +1,7 @@
+#header__logo{
+    display:inline-block;
+    margin-left: 5%;
+}
+#header__logo:hover{
+    cursor:pointer;
+}
