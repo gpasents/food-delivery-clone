@@ -1,0 +1,16 @@
+#sidebar__container{
+    position: sticky;
+    top: 5em;
+}
+
+.Sidebar__switch-box{
+    display:flex;
+    justify-content: space-between;
+    min-width: 100%;
+}
+
+.switch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

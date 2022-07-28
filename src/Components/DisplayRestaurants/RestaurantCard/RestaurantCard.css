@@ -1,0 +1,19 @@
+.restaurant-card__card{
+    border: 1px solid lightgrey;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.restaurant-card__card img{
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.restaurant-card__card-info{
+    padding-left: 1.5em;
+}
+
+h1{
+
+}

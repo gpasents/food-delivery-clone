@@ -1,0 +1,45 @@
+nav {
+    height: 3em;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px lightgrey solid;
+}
+
+#display-restaurants__header-list {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#display-restaurants__container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin: 2em 2em auto;
+}
+
+
+#display-restaurants__list {
+    list-style-type: none;
+    margin: 2em 2em auto;
+    padding-left: 0;
+}
+
+#display-restaurants__list li {
+    margin-bottom: 1.5em;
+}
+
+.mininmun-prices-radio-button {
+    display: flex;
+}
+
+@media only screen and (max-width: 1023px) {
+    #display-restaurants__container {
+        display: flex;
+        margin: 2em 2em auto;
+    }
+
+}

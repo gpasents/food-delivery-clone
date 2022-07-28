@@ -10,8 +10,8 @@ const Home = () => {
                 <h1> Order your food by adding your address</h1>
             </div>
             <div id='home__search-bar'>
-                <input type='text' name='userAddress'></input>
-                <button onClick={()=>navigate('/restaurants')}>Search Address</button>
+                <input type='text' name='userAddress' placeholder='Enter your address' ></input>
+                <button onClick={()=>navigate('/restaurants')}>Search</button>
             </div>
         </div>
     )
