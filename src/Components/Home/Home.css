@@ -12,18 +12,17 @@
     
 }
 #home__search-bar {
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
     max-width: 80%;
-    padding: 7em 7em auto;
+    padding: 7em 7em auto; */
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
-#home__search-bar input{
-    width: 30em;
-    height: 2rem;
-}
+
 #home__search-bar button{
-    min-height: 2.35rem;
+    height: 2.35rem;
     background-color: #125fca;
     border: none;
     color: white;
