@@ -28,7 +28,7 @@ const DisplayRestaurants = () => {
     return () => {
       window.removeEventListener('resize', detectSize)
     }
-  },[window.innerWidth])
+  })
 
   useEffect(() => {
     getAndSetRestaurantData();

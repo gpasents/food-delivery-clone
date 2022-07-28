@@ -1,9 +1,21 @@
 #header__container{
     background-color: #fb6100;
+    display:grid;
+    grid-template-columns: 1fr 3fr;
 }
+
+#header__address{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #header__logo{
-    display:inline-block;
-    margin-left: 5%;
+    color: white;
+    display:flex;
+    width: fit-content;
+    padding-left: 1em;
 }
 #header__logo:hover{
     cursor:pointer;
