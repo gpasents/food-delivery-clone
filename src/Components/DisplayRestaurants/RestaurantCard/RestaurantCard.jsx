@@ -1,14 +1,18 @@
 import React from 'react';
 import './RestaurantCard.css';
 
-const RestaurantCard = ({ name, type, image, address }) => {
+const RestaurantCard = ({ name, category, image, address, openNow, freeDelivery, minimumOrder }) => {
   return (
     <div className='restaurant-card__card'>
       <img src={image} alt=''></img>
       <div className='restaurant-card__card-info'>
         <h1>{name}</h1>
-        <p>{type}</p>
-        <p>{address}</p>
+        <h4>{category}</h4>
+        <div className='restaurant-card__card-info-details'>
+          <p>{openNow ? 'Open' : 'Closed'}</p>
+          <p>{freeDelivery ? 'Free Delivery' : 'No Free Delivery'}</p>
+          <p>Minimum order: € {minimumOrder} </p>
+        </div>
       </div>
     </div>
   )

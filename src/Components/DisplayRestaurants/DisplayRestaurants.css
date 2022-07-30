@@ -7,12 +7,29 @@ nav {
     align-items: center;
     border-bottom: 1px lightgrey solid;
 }
+#restaurant-count{
+    margin-left: 2em;
+}
 
 #display-restaurants__header-list {
     width: 100%;
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
+}
+
+#display-restaurants__header-list :hover {
+    cursor: pointer;
+}
+
+#display-restaurants__header-list li {
+    padding: 0.5em;
+}
+
+.selectedCategory {
+    background-color: #fb6100;
+    color: white;
+    border-radius: 17.5%;
 }
 
 #display-restaurants__container {
