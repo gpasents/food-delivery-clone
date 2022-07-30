@@ -5,11 +5,6 @@ import PlacesAutocomplete from '../PlacesAutocomplete/PlacesAutocomplete';
 
 const Home = ({ setAddress }) => {
     const navigate = useNavigate();
-
-    // const handleChange = event => {
-    //     setAddress(event.target.value);
-    // };
-
     const handleClick = () => {
         navigate('/restaurants')
     };
@@ -21,7 +16,6 @@ const Home = ({ setAddress }) => {
             </div>
             <div id='home__search-bar'>
                 <PlacesAutocomplete setAddress = {setAddress}/>
-                {/* <input type='text' name='userAddress' placeholder='Enter your address' onChange={handleChange} ></input> */}
                 <button onClick={handleClick}>Search</button>
             </div>
 

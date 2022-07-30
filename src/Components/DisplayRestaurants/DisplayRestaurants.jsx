@@ -3,8 +3,11 @@ import getRestaurants from '../../API/get';
 import './DisplayRestaurants.css';
 import RestaurantCard from './RestaurantCard/RestaurantCard';
 import Sidebar from './Sidebar/Sidebar';
+import {useNavigate} from 'react-router-dom'
 
 const DisplayRestaurants = () => {
+  const navigate = useNavigate();
+
   const [restaurantData, setRestaurantData] = useState([]);
   const [isMobile, setIsMobile] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -107,7 +110,7 @@ const DisplayRestaurants = () => {
             {filteredRestaurantData.map((res, index) => {
               let { businessname, category, image, address, openNow, freeDelivery, minimumOrder } = res;
               return (
-                <li key={index} className='display-restaurants__card'><RestaurantCard
+                <li key={index} onClick={()=>navigate(`${index}`)} className='display-restaurants__card'><RestaurantCard
                   name={businessname}
                   category={category}
                   image={image}

@@ -13,7 +13,7 @@ const Header = ({address}) => {
     return (
         <div id="header__container" >
             <h2 id="header__logo" onClick={goHome}><MdFastfood size={30} /> GeorgeBezorgd</h2>
-            {window.location.href==='http://localhost:3000/restaurants' && <div id="header__address">
+            {(window.location.href==='http://localhost:3000/restaurants'|| window.location.href.includes('http://localhost:3000/restaurants/')) && <div id="header__address">
                 <h3>{address}</h3>
                 </div>}
         </div>
