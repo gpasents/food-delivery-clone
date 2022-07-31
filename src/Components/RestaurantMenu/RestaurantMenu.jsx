@@ -8,13 +8,21 @@ import menu from '../../assets/menu';
 
 const RestaurantMenu = () => {
   let itemsRef = useRef([]);
+  const [total,setTotal] = useState(0);
   const [ratingValue, setRatingValue] = useState(4);
-  const [selectedCategory, setSelectedCategory] = useState('')
+  const [selectedCategory, setSelectedCategory] = useState('');
+  const [basket,setBasket] = useState([]);
   const categories = ['Burgers', 'Shotels', 'Gyros', 'Souvlaki', 'Sushi', 'Pasta', 'Soft Drinks', 'Beer'];
 
   let restaurantName = window.location.href.split('/')[window.location.href.split('/').length - 1];
   if (restaurantName.includes('%20')) {
     restaurantName = restaurantName.split('%20').join(' ');
+  }
+
+  const addItemButton = (name,price) =>{
+    setTotal(Number(total)+Number(price));
+    console.log(total)
+    setBasket((basket=>[...basket,[name,price]]));
   }
 
   const executeScroll = (index) => {
@@ -67,7 +75,7 @@ const RestaurantMenu = () => {
                   </div>
                   {menu[category].map((item, idx) => {
                     let itemObj = {...item,"category":category}
-                    return <RestaurantMenuItem {...itemObj} />
+                    return <RestaurantMenuItem {...itemObj} addItemButton={addItemButton}/>
 
                   })}
 
@@ -79,7 +87,7 @@ const RestaurantMenu = () => {
         </div>
       </div>
       <aside id='restaurantMenu__basket'>
-        <Basket />
+        <Basket basket={basket} total={total}/>
       </aside>
     </div>
 

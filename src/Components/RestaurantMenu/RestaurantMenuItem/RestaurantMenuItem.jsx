@@ -9,8 +9,9 @@ import shotel from '../../../images/shotel.jpg';
 import souvlaki from '../../../images/souvlaki.jpg';
 import sushi from '../../../images/sushi.jpg';
 
-const RestaurantMenuItem = ({ name, desc, price,category }) => {
-    console.log(category)
+const RestaurantMenuItem = ({ name, desc, price,category,addItemButton }) => {
+
+
     let imageDict = {
         "Burgers":burger,
         "Beer":beer,
@@ -27,8 +28,9 @@ const RestaurantMenuItem = ({ name, desc, price,category }) => {
                 <h1>{name}</h1>
                 <p>{desc}</p>
                 <h4>€ {price}</h4>
+                <button className='RestaurantMenuItem-card-add' onClick={()=>addItemButton(name,price)}>Add</button>
             </div>
-            <img src={imageDict[category]}></img>
+            <img src={imageDict[category]} alt={category}></img>
         </div>
     )
 }

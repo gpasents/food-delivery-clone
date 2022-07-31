@@ -1,4 +1,25 @@
 #Basket__container{
     position: sticky;
     top: 0;
+    color: #0a3847;
+}
+#Basket__container h2{
+    border-bottom: 1px solid lightgray;
+    text-align: center;
+}
+
+#Basket__container button{
+    padding: 1em;
+    border: 0;
+    position: sticky;
+    top: 0;
+    background-color:#fb6100;
+    border-radius: 20%;
+    color: white;
+    cursor: pointer;
+}
+
+#Basket__container-pay{
+    display: flex;
+    gap: 2em;
 }

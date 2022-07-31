@@ -15,3 +15,11 @@
 .RestaurantMenuItem-card h4{
     color: #fb6100;
 }
+
+.RestaurantMenuItem-card-add{
+    background-color: #fb6100;
+    border: 1px solid lightgrey;
+    border-radius: 20%;
+    cursor: pointer;
+    padding: 1em;
+}
