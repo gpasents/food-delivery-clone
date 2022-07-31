@@ -1,0 +1,17 @@
+
+.RestaurantMenuItem-card {
+    border: 1px solid lightgrey;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    margin: 1em 1em auto;
+    padding: 1.5em;
+}
+.RestaurantMenuItem-card img{
+    width: 200px;
+    height: 168px;
+    object-fit: cover;
+}
+
+.RestaurantMenuItem-card h4{
+    color: #fb6100;
+}

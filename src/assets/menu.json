@@ -1,0 +1,178 @@
+{
+    "Burgers": [
+        {
+            "name": "Burger 1",
+            "desc": "A tasty burger !",
+            "price": "10"
+        },
+        {
+            "name": "Burger 2",
+            "desc": "A tasty burger !",
+            "price": "15"
+        },
+        {
+            "name": "Burger 3",
+            "desc": "A tasty burger !",
+            "price": "15"
+        },
+        {
+            "name": "Burger 4",
+            "desc": "A tasty burger !",
+            "price": "15"
+        }
+    ],
+    "Shotels": [
+        {
+            "name": "Shotel 1",
+            "desc": "A tasty shotel !",
+            "price": "10"
+        },
+        {
+            "name": "Shotel 2",
+            "desc": "A tasty shotel !",
+            "price": "10"
+        },
+        {
+            "name": "Shotel 3",
+            "desc": "A tasty shotel !",
+            "price": "10"
+        },
+        {
+            "name": "Shotel 4",
+            "desc": "A tasty shotel !",
+            "price": "10"
+        }
+    ],
+    "Gyros": [
+        {
+            "name": "Gyros 1",
+            "desc": "A tasty gyros !",
+            "price": "10"
+        },
+        {
+            "name": "Gyros 2",
+            "desc": "A tasty gyros !",
+            "price": "10"
+        },
+        {
+            "name": "Gyros 3",
+            "desc": "A tasty gyros !",
+            "price": "10"
+        },
+        {
+            "name": "Gyros 4",
+            "desc": "A tasty gyros !",
+            "price": "10"
+        }
+    ],
+    "Souvlaki": [
+        {
+            "name": "Souvlaki 1",
+            "desc": "A tasty souvlaki !",
+            "price": "10"
+        },
+        {
+            "name": "Souvlaki 2",
+            "desc": "A tasty souvlaki !",
+            "price": "10"
+        },
+        {
+            "name": "Souvlaki 3",
+            "desc": "A tasty souvlaki !",
+            "price": "10"
+        },
+        {
+            "name": "Souvlaki 4",
+            "desc": "A tasty souvlaki !",
+            "price": "10"
+        }
+    ],
+    "Sushi": [
+        {
+            "name": "Sushi 1",
+            "desc": "Some tasty sushi !",
+            "price": "10"
+        },
+        {
+            "name": "Sushi 2",
+            "desc": "Some tasty sushi !",
+            "price": "10"
+        },
+        {
+            "name": "Sushi 3",
+            "desc": "Some tasty sushi !",
+            "price": "10"
+        },
+        {
+            "name": "Sushi 4",
+            "desc": "Some tasty sushi !",
+            "price": "10"
+        }
+    ],
+    "Pasta": [
+        {
+            "name": "Pasta 1",
+            "desc": "Some tasty pasta !",
+            "price": "10"
+        },
+        {
+            "name": "Pasta 2",
+            "desc": "Some tasty pasta !",
+            "price": "10"
+        },
+        {
+            "name": "Pasta 3",
+            "desc": "Some tasty pasta !",
+            "price": "10"
+        },
+        {
+            "name": "Pasta 4",
+            "desc": "Some tasty pasta !",
+            "price": "10"
+        }
+    ],
+    "Soft Drinks": [
+        {
+            "name": "Soft Drink 1",
+            "desc": "A tasty soft drink !",
+            "price": "10"
+        },
+        {
+            "name": "Soft Drink 2",
+            "desc": "A tasty soft drink !",
+            "price": "10"
+        },
+        {
+            "name": "Soft Drink 3",
+            "desc": "A tasty soft drink !",
+            "price": "10"
+        },
+        {
+            "name": "Soft Drink 4",
+            "desc": "A tasty soft drink !",
+            "price": "10"
+        }
+    ],
+    "Beer": [
+        {
+            "name": "Beer 1",
+            "desc": "A tasty beer !",
+            "price": "10"
+        },
+        {
+            "name": "Beer 1",
+            "desc": "A tasty beer !",
+            "price": "10"
+        },
+        {
+            "name": "Beer 1",
+            "desc": "A tasty beer !",
+            "price": "10"
+        },
+        {
+            "name": "Beer 1",
+            "desc": "A tasty beer !",
+            "price": "10"
+        }
+    ]
+}

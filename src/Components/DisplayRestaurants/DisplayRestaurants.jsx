@@ -110,7 +110,7 @@ const DisplayRestaurants = () => {
             {filteredRestaurantData.map((res, index) => {
               let { businessname, category, image, address, openNow, freeDelivery, minimumOrder } = res;
               return (
-                <li key={index} onClick={()=>navigate(`${index}`)} className='display-restaurants__card'><RestaurantCard
+                <li key={index} onClick={()=>navigate(`${businessname}`)} className='display-restaurants__card'><RestaurantCard
                   name={businessname}
                   category={category}
                   image={image}

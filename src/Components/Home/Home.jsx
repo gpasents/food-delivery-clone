@@ -16,7 +16,7 @@ const Home = ({ setAddress }) => {
             </div>
             <div id='home__search-bar'>
                 <PlacesAutocomplete setAddress = {setAddress}/>
-                <button onClick={handleClick}>Search</button>
+                <button id='home__search-bar-search' onClick={handleClick}>Search</button>
             </div>
 
         </div>
