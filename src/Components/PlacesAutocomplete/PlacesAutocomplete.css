@@ -1,10 +1,12 @@
 #input__container-input {
-    height: 100%;
+    width: 30em;
+    height: 2rem;
 }
 
 #input__suggestions-ul {
     list-style-type: none;
     padding: 0;
+    max-width: 25.3em;
 }
 
 #input__suggestions-ul li {

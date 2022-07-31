@@ -27,20 +27,6 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 720px) {
-    #home__banner h1{
-            
-    }
-}
-
-@media screen and (max-width: 380px) {
-    #home__banner h1{
-        
-    }
-    #home__search-bar {
-        display: flex;
-    }
-}
 
 /* @media only screen and (min-width : 150px) and (max-width : 780px)
 {
@@ -50,5 +36,4 @@
 		width: 95%;
 		margin: 0 auto;
 	}
-
 } */
