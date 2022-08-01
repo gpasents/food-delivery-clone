@@ -11,29 +11,15 @@
     overflow-wrap: break-word;
     
 }
-#home__search-bar {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
+#home__bottom-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 300px;
+    z-index: -1;
 }
 
-#home__search-bar button{
-    height: 2.35rem;
-    background-color: #125fca;
-    border: none;
-    color: white;
-    font-size: 1rem;
+#home__bottom-image img{
+    max-width: 100%;
 }
-#home__search-bar button:hover{
-    cursor: pointer;
-}
-
-
-/* @media only screen and (min-width : 150px) and (max-width : 780px)
-{
-	
-	#home__search-bar
-	{
-		width: 95%;
-		margin: 0 auto;
-	}
-} */

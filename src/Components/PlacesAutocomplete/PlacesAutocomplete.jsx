@@ -1,10 +1,18 @@
+import { useNavigate } from 'react-router-dom';
 import usePlacesAutocomplete, {
 } from "use-places-autocomplete";
 import useOnclickOutside from "react-cool-onclickoutside";
 import './PlacesAutocomplete.css'
-import {MdLocationOn} from "react-icons/md";
+import { MdLocationOn } from "react-icons/md";
 
 const PlacesAutocomplete = ({ setAddress }) => {
+
+    const navigate = useNavigate();
+    
+    const handleClick = () => {
+        navigate('/restaurants')
+    };
+
     const {
         ready,
         value,
@@ -48,20 +56,24 @@ const PlacesAutocomplete = ({ setAddress }) => {
 
             return (
                 <li key={place_id} onClick={handleSelect(suggestion)}>
-                    <MdLocationOn/><strong>{main_text}</strong> <small>{secondary_text}</small>
+                    <MdLocationOn /><strong>{main_text}</strong> <small>{secondary_text}</small>
                 </li>
             );
         });
 
     return (
         <div id="input__container" ref={ref}>
-            <input
-                id="input__container-input"
-                value={value}
-                onChange={handleInput}
-                disabled={!ready}
-                placeholder="Where are you going?"
-            />
+            <div id="search-bar">
+
+                <input
+                    id="input__container-input"
+                    value={value}
+                    onChange={handleInput}
+                    disabled={!ready}
+                    placeholder="Address..."
+                />
+                <input id="input__container-submit" type="submit" value="Go!" onClick={handleClick} />
+            </div>
             {/* We can use the "status" to decide whether we should display the dropdown or not */}
             {status === "OK" &&
                 <div id="input__suggestions">
