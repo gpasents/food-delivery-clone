@@ -7,7 +7,7 @@ const RestaurantCard = ({ name, category, image, address, openNow, freeDelivery,
       <img src={image} alt=''></img>
       <div className='restaurant-card__card-info'>
         <h1>{name}</h1>
-        <h4>{category}</h4>
+        <p>{category}</p>
         <div className='restaurant-card__card-info-details'>
           <p>{openNow ? 'Open' : 'Closed'}</p>
           <p>{freeDelivery ? 'Free Delivery' : 'No Free Delivery'}</p>

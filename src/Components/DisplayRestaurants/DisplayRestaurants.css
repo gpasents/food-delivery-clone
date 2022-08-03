@@ -8,7 +8,8 @@
     white-space: nowrap;
     overflow: auto;
 }
-#restaurant-count{
+
+#restaurant-count {
     margin-left: 2em;
 }
 
@@ -58,17 +59,25 @@
     display: flex;
 }
 
-/* @media only screen and (max-width: 1023px) {
+
+@media screen and (min-width:600px) {
+    #display-restaurants__header-list {
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width:1023px) {
     #display-restaurants__container {
-        display: flex;
-        margin: 2em 2em auto;
+        display: block;
+        margin: 1em;
     }
 
-} */
+    #display-restaurants__list {
+        margin: 0;
 
-@media screen and (max-width:600px) {
-    #display-restaurants__header-list {
-        justify-content: center;
-        align-items: center;
+    }
+    #restaurant-count {
+        margin: auto;
+        overflow: hidden;
     }
 }
