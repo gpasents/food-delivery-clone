@@ -1,11 +1,12 @@
-nav {
-    height: 3em;
+#display-restaurants__header {
     position: sticky;
     top: 0;
     background-color: white;
     display: flex;
     align-items: center;
     border-bottom: 1px lightgrey solid;
+    white-space: nowrap;
+    overflow: auto;
 }
 #restaurant-count{
     margin-left: 2em;
@@ -14,8 +15,8 @@ nav {
 #display-restaurants__header-list {
     width: 100%;
     list-style-type: none;
+    padding: 0;
     display: flex;
-    justify-content: space-evenly;
 }
 
 #display-restaurants__header-list :hover {
@@ -57,10 +58,17 @@ nav {
     display: flex;
 }
 
-@media only screen and (max-width: 1023px) {
+/* @media only screen and (max-width: 1023px) {
     #display-restaurants__container {
         display: flex;
         margin: 2em 2em auto;
     }
 
+} */
+
+@media screen and (max-width:600px) {
+    #display-restaurants__header-list {
+        justify-content: center;
+        align-items: center;
+    }
 }

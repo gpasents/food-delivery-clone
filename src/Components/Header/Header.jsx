@@ -3,7 +3,7 @@ import { MdFastfood } from "react-icons/md";
 import { useNavigate } from 'react-router-dom';
 import './Header.css'
 
-const Header = ({address}) => {
+const Header = ({ address }) => {
     let navigate = useNavigate();
 
     const goHome = () => {
@@ -12,10 +12,13 @@ const Header = ({address}) => {
 
     return (
         <div id="header__container" >
-            <h2 id="header__logo" onClick={goHome}><MdFastfood size={30} /> GeorgeBezorgd</h2>
-            {(window.location.href==='http://localhost:3000/restaurants'|| window.location.href.includes('http://localhost:3000/restaurants/')) && <div id="header__address">
+            <div className="header__container-logo" onClick={goHome}>
+                <MdFastfood color="white" size={30}/>
+                <h2 >GeorgeBezorgd</h2>
+            </div>
+            {(window.location.href === 'http://localhost:3000/restaurants' || window.location.href.includes('http://localhost:3000/restaurants/')) && <div id="header__address">
                 <h3>{address}</h3>
-                </div>}
+            </div>}
         </div>
     )
 }
