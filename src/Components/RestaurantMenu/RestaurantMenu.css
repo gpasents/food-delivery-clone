@@ -1,20 +1,20 @@
-#restaurantMenu__container{
+#restaurantMenu__container {
     display: grid;
     grid-template-columns: 4fr 1fr;
 }
 
-#restaurantMenu__header-image{
+#restaurantMenu__header-image {
     width: 100%;
     height: 12em;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
-#restaurantMenu__header-details{
+#restaurantMenu__header-details {
     padding: 2em;
 }
 
-#restaurantMenu__header-categories{
+#restaurantMenu__header-categories {
     position: sticky;
     top: 0;
 }
@@ -26,6 +26,7 @@
     display: flex;
     justify-content: space-evenly;
     background-color: #ebebeb;
+    white-space: nowrap;
 }
 
 #restaurantMenu__header-categories-list :hover {
@@ -41,7 +42,8 @@
     color: white;
     border-radius: 17.5%;
 }
-.restaurantMenu__menu-section-title{
+
+.restaurantMenu__menu-section-title {
     background-color: #ebebeb;
     margin-top: 1em;
     height: 3em;
@@ -49,4 +51,36 @@
     align-items: center;
     justify-content: center;
     color: #0a3847;
+}
+
+#basket_nav {
+    height: 70px;
+    position: sticky;
+    bottom: 0;
+    background-color: #007aff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+}
+
+.button-go-back{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+@media screen and (max-width:1023px) {
+    #restaurantMenu__container {
+        display: block;
+    }
+}
+
+@media screen and (max-width:548px) {
+    #restaurantMenu__header-categories-list {
+        justify-content: unset;
+        overflow: auto;
+    }
+
 }
